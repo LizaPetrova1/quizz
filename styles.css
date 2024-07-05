@@ -1,0 +1,154 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eda6da;
+    color: #1b0b13;
+}
+
+body.light-theme {
+    border-radius: 10px;
+    background-color: white;
+    background-color: rgb(248, 138, 233);
+    color: black;
+}
+
+body.dark-theme {
+    border-radius: 10px;
+    background-color: rgb(194, 54, 124);
+    background-color: rgb(14, 1, 14);
+    color: rgb(43, 4, 44);
+}
+
+/* Кнопка для смены темы */
+.btn-theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.theme-switcher {
+    position: absolute;
+    right: 30px;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.quiz__header{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.quiz-questions
+
+
+.quiz-indicator
+{
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.quiz-questions-item{
+    margin-bottom: 20px;
+    background-color:#e4cdec;
+    border: 1px solid #600f69;
+    border-radius: 5px;
+    padding: 5px 15px;
+    min-height: 40px;
+    font-size: 17px;
+}
+.quiz-results-item{
+    margin-bottom: 20px;
+    background-color:#e0c1ea;
+    border: 1px solid #600f69;
+    border-radius: 5px;
+    padding: 5px 15px;
+    min-height: 40px;
+    font-size: 17px;
+    
+    &__question {
+        margin-bottom: 20px;
+    }
+
+    &__answers {
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+li {
+    list-style-type: none;
+  }
+
+.quiz-results{
+    display: none;
+}
+
+.quiz-indicator {
+    display: flex;
+    align-items: center;
+    }
+
+.btn-next {
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3e0b4e;
+    border-radius: 5px;
+    background: #f3d1f5;
+    border: 1px solid #000000;
+}
+
+.btn-restart {
+    display: none;
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e0c1ea;
+    border-radius: 5px;
+    background: #180419;
+    border: 1px solid #ecc5e4;
+}
+
+.question--hidden,
+.indicator--hidden,
+.btn-next--hidden {
+    display: none;
+}
+
+.indicator--visible,
+.btn-restart--visible {
+    display: block;
+}
+
+.answers--invalid {
+    color: red;
+}
+
+.answers--valid {
+    color: green;
+}
+
+
+
